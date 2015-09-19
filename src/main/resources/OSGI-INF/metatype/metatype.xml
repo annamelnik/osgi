@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metatype:MetaData
+	xmlns:metatype='http://www.osgi.org/xmlns/metatype/v1.0.0'>
+    
+  <metatype:OCD 
+    id="componentfactory"
+    name="%name.name" 
+    required="true"
+    type="String"  
+    default="normal"
+    description="%name.desc">
+    
+  </metatype:OCD>
+    <metatype:Designate 
+        pid="myServyse"
+        factoryPid="componentfactory">   
+        <metatype:Object ocdref="componentfactory"/>
+  </metatype:Designate>
+</metatype:MetaData>
